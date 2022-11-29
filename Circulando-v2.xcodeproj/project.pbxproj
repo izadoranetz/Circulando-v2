@@ -17,6 +17,10 @@
 		19A622E429363C7300830376 /* Circulando_v2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A622E329363C7300830376 /* Circulando_v2Tests.swift */; };
 		19A622EE29363C7300830376 /* Circulando_v2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A622ED29363C7300830376 /* Circulando_v2UITests.swift */; };
 		19A622F029363C7300830376 /* Circulando_v2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A622EF29363C7300830376 /* Circulando_v2UITestsLaunchTests.swift */; };
+		19A623012936411800830376 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A623002936411800830376 /* LoginView.swift */; };
+		19A623032936413500830376 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A623022936413500830376 /* LoginViewController.swift */; };
+		19A623052936414C00830376 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A623042936414C00830376 /* Coordinator.swift */; };
+		19A62307293642ED00830376 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A62306293642ED00830376 /* LoginCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		19A622E929363C7300830376 /* Circulando-v2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Circulando-v2UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		19A622ED29363C7300830376 /* Circulando_v2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Circulando_v2UITests.swift; sourceTree = "<group>"; };
 		19A622EF29363C7300830376 /* Circulando_v2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Circulando_v2UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		19A623002936411800830376 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		19A623022936413500830376 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		19A623042936414C00830376 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		19A62306293642ED00830376 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +109,9 @@
 		19A622C829363C7000830376 /* Circulando-v2 */ = {
 			isa = PBXGroup;
 			children = (
-				19A622C929363C7000830376 /* AppDelegate.swift */,
-				19A622CB29363C7000830376 /* SceneDelegate.swift */,
-				19A622CD29363C7000830376 /* ViewController.swift */,
-				19A622CF29363C7000830376 /* Main.storyboard */,
-				19A622D529363C7200830376 /* Assets.xcassets */,
-				19A622D729363C7200830376 /* LaunchScreen.storyboard */,
 				19A622DA29363C7200830376 /* Info.plist */,
-				19A622D229363C7000830376 /* Circulando_v2.xcdatamodeld */,
+				19A622FD2936403B00830376 /* Source */,
+				19A622FC2936403400830376 /* Resource */,
 			);
 			path = "Circulando-v2";
 			sourceTree = "<group>";
@@ -128,6 +131,63 @@
 				19A622EF29363C7300830376 /* Circulando_v2UITestsLaunchTests.swift */,
 			);
 			path = "Circulando-v2UITests";
+			sourceTree = "<group>";
+		};
+		19A622FC2936403400830376 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				19A622C929363C7000830376 /* AppDelegate.swift */,
+				19A622CB29363C7000830376 /* SceneDelegate.swift */,
+				19A622CD29363C7000830376 /* ViewController.swift */,
+				19A622CF29363C7000830376 /* Main.storyboard */,
+				19A622D529363C7200830376 /* Assets.xcassets */,
+				19A622D729363C7200830376 /* LaunchScreen.storyboard */,
+				19A622D229363C7000830376 /* Circulando_v2.xcdatamodeld */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		19A622FD2936403B00830376 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				19A62309293645DA00830376 /* Infrastructure */,
+				19A62308293645D000830376 /* Extensions */,
+				19A622FF2936409000830376 /* Coordinator */,
+				19A622FE2936408A00830376 /* Controller */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		19A622FE2936408A00830376 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				19A623002936411800830376 /* LoginView.swift */,
+				19A623022936413500830376 /* LoginViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		19A622FF2936409000830376 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				19A623042936414C00830376 /* Coordinator.swift */,
+				19A62306293642ED00830376 /* LoginCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		19A62308293645D000830376 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		19A62309293645DA00830376 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Infrastructure;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,10 +321,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19A623032936413500830376 /* LoginViewController.swift in Sources */,
 				19A622CE29363C7000830376 /* ViewController.swift in Sources */,
 				19A622D429363C7000830376 /* Circulando_v2.xcdatamodeld in Sources */,
 				19A622CA29363C7000830376 /* AppDelegate.swift in Sources */,
+				19A623012936411800830376 /* LoginView.swift in Sources */,
 				19A622CC29363C7000830376 /* SceneDelegate.swift in Sources */,
+				19A62307293642ED00830376 /* LoginCoordinator.swift in Sources */,
+				19A623052936414C00830376 /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

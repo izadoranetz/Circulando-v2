@@ -150,8 +150,6 @@
 		19A622FD2936403B00830376 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				19A62309293645DA00830376 /* Infrastructure */,
-				19A62308293645D000830376 /* Extensions */,
 				19A622FF2936409000830376 /* Coordinator */,
 				19A622FE2936408A00830376 /* Controller */,
 			);
@@ -174,20 +172,6 @@
 				19A62306293642ED00830376 /* LoginCoordinator.swift */,
 			);
 			path = Coordinator;
-			sourceTree = "<group>";
-		};
-		19A62308293645D000830376 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		19A62309293645DA00830376 /* Infrastructure */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Infrastructure;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

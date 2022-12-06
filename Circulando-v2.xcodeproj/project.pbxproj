@@ -86,6 +86,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		198E5C13293F72760088A742 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		19A622BD29363C7000830376 = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +157,7 @@
 		19A622FD2936403B00830376 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				198E5C13293F72760088A742 /* Extensions */,
 				19A622FF2936409000830376 /* Coordinator */,
 				19A622FE2936408A00830376 /* Controller */,
 			);

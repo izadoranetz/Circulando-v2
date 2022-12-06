@@ -10,10 +10,19 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
-    var viewMain = LoginView()
+    //MARK: Closure
+    var onRegisterTap: (() -> Void)?
+
+    lazy var loginView: LoginView = {
+        let loginView = LoginView()
+        loginView.onRegisterTap = {
+            self.onRegisterTap?()
+        }
+        return loginView
+    }()
 
     override func loadView() {
-        self.view = viewMain
+        self.view = loginView
     }
 
     override func viewDidLoad() {
@@ -21,8 +30,5 @@ class LoginViewController: UIViewController {
         self.title = "Login"
         self.navigationController?.navigationBar.prefersLargeTitles = true
     }
-
-    
-
 
 }

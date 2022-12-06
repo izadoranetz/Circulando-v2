@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  Circulando-v2
 //
-//  Created by IFB BIOTIC 06 on 29/11/22.
+//  Created by Izadora Netz on 29/11/22.
 //
 
 import UIKit
@@ -24,7 +24,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             
             self.window?.rootViewController = navigationController
             
-            let coordinator = RegisterCoordinator(navigationController: navigationController)
+            let coordinator = LoginCoordinator(navigationController: navigationController)
                     
             coordinator.start()
     }

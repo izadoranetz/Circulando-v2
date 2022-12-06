@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		198E5C15293F73420088A742 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198E5C14293F73420088A742 /* UIColor+.swift */; };
+		198E5C18293F76350088A742 /* ImageDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198E5C17293F76350088A742 /* ImageDefault.swift */; };
+		198E5C1A293F76480088A742 /* ButtonDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198E5C19293F76480088A742 /* ButtonDefault.swift */; };
+		198E5C1C293F76570088A742 /* LabelDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198E5C1B293F76570088A742 /* LabelDefault.swift */; };
+		198E5C1E293F76890088A742 /* TextFieldDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198E5C1D293F76890088A742 /* TextFieldDefault.swift */; };
 		19A622CA29363C7000830376 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A622C929363C7000830376 /* AppDelegate.swift */; };
 		19A622CC29363C7000830376 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A622CB29363C7000830376 /* SceneDelegate.swift */; };
 		19A622CE29363C7000830376 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A622CD29363C7000830376 /* ViewController.swift */; };
@@ -43,6 +47,10 @@
 
 /* Begin PBXFileReference section */
 		198E5C14293F73420088A742 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		198E5C17293F76350088A742 /* ImageDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDefault.swift; sourceTree = "<group>"; };
+		198E5C19293F76480088A742 /* ButtonDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonDefault.swift; sourceTree = "<group>"; };
+		198E5C1B293F76570088A742 /* LabelDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelDefault.swift; sourceTree = "<group>"; };
+		198E5C1D293F76890088A742 /* TextFieldDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldDefault.swift; sourceTree = "<group>"; };
 		19A622C629363C7000830376 /* Circulando-v2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Circulando-v2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		19A622C929363C7000830376 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19A622CB29363C7000830376 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +102,17 @@
 				198E5C14293F73420088A742 /* UIColor+.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		198E5C16293F76180088A742 /* Infraestructure */ = {
+			isa = PBXGroup;
+			children = (
+				198E5C17293F76350088A742 /* ImageDefault.swift */,
+				198E5C19293F76480088A742 /* ButtonDefault.swift */,
+				198E5C1B293F76570088A742 /* LabelDefault.swift */,
+				198E5C1D293F76890088A742 /* TextFieldDefault.swift */,
+			);
+			path = Infraestructure;
 			sourceTree = "<group>";
 		};
 		19A622BD29363C7000830376 = {
@@ -160,6 +179,7 @@
 		19A622FD2936403B00830376 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				198E5C16293F76180088A742 /* Infraestructure */,
 				198E5C13293F72760088A742 /* Extensions */,
 				19A622FF2936409000830376 /* Coordinator */,
 				19A622FE2936408A00830376 /* Controller */,
@@ -317,7 +337,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				19A623032936413500830376 /* LoginViewController.swift in Sources */,
+				198E5C18293F76350088A742 /* ImageDefault.swift in Sources */,
+				198E5C1C293F76570088A742 /* LabelDefault.swift in Sources */,
+				198E5C1E293F76890088A742 /* TextFieldDefault.swift in Sources */,
 				19A622CE29363C7000830376 /* ViewController.swift in Sources */,
+				198E5C1A293F76480088A742 /* ButtonDefault.swift in Sources */,
 				19A622D429363C7000830376 /* Circulando_v2.xcdatamodeld in Sources */,
 				19A622CA29363C7000830376 /* AppDelegate.swift in Sources */,
 				19A623012936411800830376 /* LoginView.swift in Sources */,

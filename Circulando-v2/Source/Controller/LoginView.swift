@@ -17,68 +17,24 @@ class LoginView: UIView {
     }
 
     //imagem
-    var imageLogin: UIImageView = {
-        let imagem = UIImageView ()
-        imagem.image = UIImage(named: "ImageLogin")
-        imagem.contentMode = .scaleAspectFit
-        imagem.translatesAutoresizingMaskIntoConstraints = false
+    var imageLogin = ImageDefault(image: "ImageLogin")
 
-        return imagem
-    }()
 
     //label imagem
-    var imageLabel: UILabel = {
-        let label = UILabel ()
-        label.textColor = .textLabelColor
-        label.font = UIFont(name: "SFProDisplay-Light", size: 16)
-        label.textAlignment = .center
-        label.text = "Aumente o ciclo de vida de suas coisas"
-        label.translatesAutoresizingMaskIntoConstraints = false
+    var imageLabel = LabelDefault(text: "Aumente o ciclo de vida de suas coisas", font: UIFont.systemFont(ofSize: 16, weight: .regular))
 
-        return label
-    }()
 
     //input e-mail
-    var emailTextField: UITextField = {
-        let textField = UITextField ()
-        textField.backgroundColor = .textFieldBackGroundColor
-        textField.placeholder = "E-mail"
-        textField.translatesAutoresizingMaskIntoConstraints = false
-
-        return textField
-    }()
+    var emailTextField = TextFieldDefault(placeholder: "E-mail")
 
     //input senha
-    var senhaTextField: UITextField = {
-        let textField = UITextField ()
-        textField.backgroundColor = .textFieldBackGroundColor
-        textField.placeholder = "Senha"
-        textField.translatesAutoresizingMaskIntoConstraints = false
-
-        return textField
-    }()
+    var senhaTextField = TextFieldDefault(placeholder: "Senha")
 
     //botao entrar
-    var buttonEntrar: UIButton = {
-        let button = UIButton ()
-        button.setTitle("Entrar", for: .normal)
-        button.backgroundColor = .buttonBackGroundColorPrimary
-        button.layer.cornerRadius = 14
-        button.translatesAutoresizingMaskIntoConstraints = false
-
-        return button
-    }()
+    var buttonEntrar = ButtonDefault(text: "Entrar", backgroundColor: .buttonBackGroundColorPrimary)
 
     //botao cadastrar
-    var buttonCadastrar: UIButton = {
-        let button = UIButton ()
-        button.setTitle("Cadastrar", for: .normal)
-        button.backgroundColor = .buttonBackGroundColorSecondary
-        button.layer.cornerRadius = 14
-        button.translatesAutoresizingMaskIntoConstraints = false
-
-        return button
-    }()
+    var buttonCadastrar = ButtonDefault(text: "Cadastrar", backgroundColor: .buttonBackGroundColorSecondary)
 
     func setupVisualElements() {
         self.addSubview(imageLogin)

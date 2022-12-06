@@ -133,6 +133,7 @@
 			path = "Circulando-v2UITests";
 			sourceTree = "<group>";
 		};
+<<<<<<< Updated upstream
 		19A622FC2936403400830376 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -190,6 +191,8 @@
 			path = Infrastructure;
 			sourceTree = "<group>";
 		};
+=======
+>>>>>>> Stashed changes
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -321,14 +324,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< Updated upstream
 				19A623032936413500830376 /* LoginViewController.swift in Sources */,
+=======
+>>>>>>> Stashed changes
 				19A622CE29363C7000830376 /* ViewController.swift in Sources */,
 				19A622D429363C7000830376 /* Circulando_v2.xcdatamodeld in Sources */,
 				19A622CA29363C7000830376 /* AppDelegate.swift in Sources */,
 				19A623012936411800830376 /* LoginView.swift in Sources */,
 				19A622CC29363C7000830376 /* SceneDelegate.swift in Sources */,
+<<<<<<< Updated upstream
 				19A62307293642ED00830376 /* LoginCoordinator.swift in Sources */,
 				19A623052936414C00830376 /* Coordinator.swift in Sources */,
+=======
+>>>>>>> Stashed changes
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

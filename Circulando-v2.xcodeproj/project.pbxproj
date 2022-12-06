@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		198E5C15293F73420088A742 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198E5C14293F73420088A742 /* UIColor+.swift */; };
 		19A622CA29363C7000830376 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A622C929363C7000830376 /* AppDelegate.swift */; };
 		19A622CC29363C7000830376 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A622CB29363C7000830376 /* SceneDelegate.swift */; };
 		19A622CE29363C7000830376 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A622CD29363C7000830376 /* ViewController.swift */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		198E5C14293F73420088A742 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		19A622C629363C7000830376 /* Circulando-v2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Circulando-v2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		19A622C929363C7000830376 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19A622CB29363C7000830376 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 		198E5C13293F72760088A742 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				198E5C14293F73420088A742 /* UIColor+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 				19A622CC29363C7000830376 /* SceneDelegate.swift in Sources */,
 				19A62307293642ED00830376 /* LoginCoordinator.swift in Sources */,
 				19A623052936414C00830376 /* Coordinator.swift in Sources */,
+				198E5C15293F73420088A742 /* UIColor+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

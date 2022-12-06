@@ -11,7 +11,7 @@ import UIKit
 class LoginView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.backgroundColor = .white
+        self.backgroundColor = .viewBackGroundColor
         //inicializa o visual
         setupVisualElements()
     }
@@ -29,7 +29,7 @@ class LoginView: UIView {
     //label imagem
     var imageLabel: UILabel = {
         let label = UILabel ()
-        label.textColor = UIColor(red: 0.541, green: 0.541, blue: 0.557, alpha: 1)
+        label.textColor = .textLabelColor
         label.font = UIFont(name: "SFProDisplay-Light", size: 16)
         label.textAlignment = .center
         label.text = "Aumente o ciclo de vida de suas coisas"
@@ -41,7 +41,7 @@ class LoginView: UIView {
     //input e-mail
     var emailTextField: UITextField = {
         let textField = UITextField ()
-        textField.layer.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 1).cgColor
+        textField.backgroundColor = .textFieldBackGroundColor
         textField.placeholder = "E-mail"
         textField.translatesAutoresizingMaskIntoConstraints = false
 
@@ -51,7 +51,7 @@ class LoginView: UIView {
     //input senha
     var senhaTextField: UITextField = {
         let textField = UITextField ()
-        textField.layer.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 1).cgColor
+        textField.backgroundColor = .textFieldBackGroundColor
         textField.placeholder = "Senha"
         textField.translatesAutoresizingMaskIntoConstraints = false
 
@@ -62,7 +62,7 @@ class LoginView: UIView {
     var buttonEntrar: UIButton = {
         let button = UIButton ()
         button.setTitle("Entrar", for: .normal)
-        button.layer.backgroundColor = UIColor(red: 0.251, green: 0.502, blue: 0.439, alpha: 1).cgColor
+        button.backgroundColor = .buttonBackGroundColorPrimary
         button.layer.cornerRadius = 14
         button.translatesAutoresizingMaskIntoConstraints = false
 
@@ -73,7 +73,7 @@ class LoginView: UIView {
     var buttonCadastrar: UIButton = {
         let button = UIButton ()
         button.setTitle("Cadastrar", for: .normal)
-        button.layer.backgroundColor = UIColor(red: 0.188, green: 0.749, blue: 0.616, alpha: 1).cgColor
+        button.backgroundColor = .buttonBackGroundColorSecondary
         button.layer.cornerRadius = 14
         button.translatesAutoresizingMaskIntoConstraints = false
 

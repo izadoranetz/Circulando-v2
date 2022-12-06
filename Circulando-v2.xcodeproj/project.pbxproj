@@ -12,6 +12,9 @@
 		198E5C1A293F76480088A742 /* ButtonDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198E5C19293F76480088A742 /* ButtonDefault.swift */; };
 		198E5C1C293F76570088A742 /* LabelDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198E5C1B293F76570088A742 /* LabelDefault.swift */; };
 		198E5C1E293F76890088A742 /* TextFieldDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198E5C1D293F76890088A742 /* TextFieldDefault.swift */; };
+		198E5C22293F7E7C0088A742 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198E5C21293F7E7C0088A742 /* RegisterView.swift */; };
+		198E5C26293F7EAE0088A742 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198E5C25293F7EAE0088A742 /* RegisterViewController.swift */; };
+		198E5C28293F7EC30088A742 /* RegisterCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198E5C27293F7EC30088A742 /* RegisterCoordinator.swift */; };
 		19A622CA29363C7000830376 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A622C929363C7000830376 /* AppDelegate.swift */; };
 		19A622CC29363C7000830376 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A622CB29363C7000830376 /* SceneDelegate.swift */; };
 		19A622CE29363C7000830376 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A622CD29363C7000830376 /* ViewController.swift */; };
@@ -51,6 +54,9 @@
 		198E5C19293F76480088A742 /* ButtonDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonDefault.swift; sourceTree = "<group>"; };
 		198E5C1B293F76570088A742 /* LabelDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelDefault.swift; sourceTree = "<group>"; };
 		198E5C1D293F76890088A742 /* TextFieldDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldDefault.swift; sourceTree = "<group>"; };
+		198E5C21293F7E7C0088A742 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		198E5C25293F7EAE0088A742 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		198E5C27293F7EC30088A742 /* RegisterCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCoordinator.swift; sourceTree = "<group>"; };
 		19A622C629363C7000830376 /* Circulando-v2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Circulando-v2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		19A622C929363C7000830376 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19A622CB29363C7000830376 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -113,6 +119,24 @@
 				198E5C1D293F76890088A742 /* TextFieldDefault.swift */,
 			);
 			path = Infraestructure;
+			sourceTree = "<group>";
+		};
+		198E5C1F293F7E490088A742 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				198E5C21293F7E7C0088A742 /* RegisterView.swift */,
+				198E5C25293F7EAE0088A742 /* RegisterViewController.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		198E5C20293F7E520088A742 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				19A623022936413500830376 /* LoginViewController.swift */,
+				19A623002936411800830376 /* LoginView.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		19A622BD29363C7000830376 = {
@@ -190,8 +214,8 @@
 		19A622FE2936408A00830376 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				19A623002936411800830376 /* LoginView.swift */,
-				19A623022936413500830376 /* LoginViewController.swift */,
+				198E5C20293F7E520088A742 /* Login */,
+				198E5C1F293F7E490088A742 /* Register */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -201,6 +225,7 @@
 			children = (
 				19A623042936414C00830376 /* Coordinator.swift */,
 				19A62306293642ED00830376 /* LoginCoordinator.swift */,
+				198E5C27293F7EC30088A742 /* RegisterCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -339,14 +364,17 @@
 				19A623032936413500830376 /* LoginViewController.swift in Sources */,
 				198E5C18293F76350088A742 /* ImageDefault.swift in Sources */,
 				198E5C1C293F76570088A742 /* LabelDefault.swift in Sources */,
+				198E5C22293F7E7C0088A742 /* RegisterView.swift in Sources */,
 				198E5C1E293F76890088A742 /* TextFieldDefault.swift in Sources */,
 				19A622CE29363C7000830376 /* ViewController.swift in Sources */,
+				198E5C26293F7EAE0088A742 /* RegisterViewController.swift in Sources */,
 				198E5C1A293F76480088A742 /* ButtonDefault.swift in Sources */,
 				19A622D429363C7000830376 /* Circulando_v2.xcdatamodeld in Sources */,
 				19A622CA29363C7000830376 /* AppDelegate.swift in Sources */,
 				19A623012936411800830376 /* LoginView.swift in Sources */,
 				19A622CC29363C7000830376 /* SceneDelegate.swift in Sources */,
 				19A62307293642ED00830376 /* LoginCoordinator.swift in Sources */,
+				198E5C28293F7EC30088A742 /* RegisterCoordinator.swift in Sources */,
 				19A623052936414C00830376 /* Coordinator.swift in Sources */,
 				198E5C15293F73420088A742 /* UIColor+.swift in Sources */,
 			);

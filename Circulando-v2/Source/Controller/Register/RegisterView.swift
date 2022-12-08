@@ -16,7 +16,9 @@ class RegisterView: UIView {
         //inicializa o visual
         setupVisualElements()
     }
-
+    
+    //MARK: Closure
+        var onLoginTap: (() ->Void)?
 
     //imagem
     var imageCadastrar = ImageDefault(image: "ImageCadastrar")
@@ -49,6 +51,7 @@ class RegisterView: UIView {
         self.addSubview(buttonCadastrarEEntrar)
         self.addSubview(buttonCancelar)
 
+        buttonCancelar.addTarget(self, action: #selector(loginTap), for: .touchUpInside)
 
         NSLayoutConstraint.activate([
 
@@ -94,7 +97,14 @@ class RegisterView: UIView {
         ])
     }
 
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
+    //MARK: Actions
+        @objc
+        private func loginTap(){
+            onLoginTap?()
+        }
+
+        required init?(coder: NSCoder) {
+            fatalError("init(coder:) has not been implemented")
+        }
+
 }

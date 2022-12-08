@@ -1,8 +1,5 @@
 # Circulando-v2
 
-
------------------------------------------
-
 Projeto Final Curso de Extensão IFB Swift
 
 v2: Projeto refeito no XCode

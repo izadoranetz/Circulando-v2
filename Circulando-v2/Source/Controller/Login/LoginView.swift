@@ -22,11 +22,9 @@ class LoginView: UIView {
 
     //imagem
     var imageLogin = ImageDefault(image: "ImageLogin")
-
-
+    
     //label imagem
     var imageLabel = LabelDefault(text: "Aumente o ciclo de vida de suas coisas", font: UIFont.systemFont(ofSize: 16, weight: .regular))
-
 
     //input e-mail
     var emailTextField = TextFieldDefault(placeholder: "E-mail")

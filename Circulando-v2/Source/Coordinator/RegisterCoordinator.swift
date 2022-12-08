@@ -27,8 +27,7 @@ class RegisterCoordinator: Coordinator {
     }
 
     func gotoLogin() {
-        let coordinator = LoginCoordinator(navigationController: navigationController)
-        coordinator.start()
+        self.navigationController.popViewController(animated: true)
         
     }
 

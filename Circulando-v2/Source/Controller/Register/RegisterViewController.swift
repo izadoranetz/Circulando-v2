@@ -29,6 +29,7 @@ class RegisterViewController: UIViewController {
         super.viewDidLoad()
         self.title = "Cadastrar"
         self.navigationController?.navigationBar.prefersLargeTitles = true
+        self.navigationItem.setHidesBackButton(true, animated: false)
     }
 
 }
